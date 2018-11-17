@@ -1,0 +1,34 @@
+.form-control{
+    max-width: 30%;
+    text-align: center;
+
+}
+.mainContainer{
+    border: 2px red groove;
+    max-width: 425px;
+    margin-left: 35%;
+    padding: 10px;
+    text-align: center;
+}
+h1{
+    color: #003210;
+    text-align: center;
+}
+textarea{
+
+    box-sizing: padding-box;
+    overflow:hidden;
+    padding:10px;
+    min-height: 400px;
+    min-width:400px;
+    max-width:400px;
+    font-size:14px;
+    margin:50px auto;
+    display:block;
+    border-radius:2px;
+    border:6px inset #007725;
+}
+
+body{
+    background-color: beige;
+}
