@@ -23,7 +23,7 @@ public static void start(){
         assertFalse(loremIpsumGenerator.getWords(2).isEmpty());
         assertFalse(loremIpsumGenerator.getParagraphs(2).isEmpty());
         assertEquals(2,loremIpsumGenerator.getWords(2).split(("\\s+")).length);
-        assertEquals(100,loremIpsumGenerator.getParagraphs(2).split(("\\s+")).length);
+        assertEquals(2,loremIpsumGenerator.getParagraphs(2).split(("\\s+")).length);
     }
 }
 
