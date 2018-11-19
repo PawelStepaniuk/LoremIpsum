@@ -12,18 +12,24 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 
 public class LoremipsumTest {
-    static LoremIpsumGenerator loremIpsumGenerator;
-@BeforeClass
-public static void start(){
-    loremIpsumGenerator = new SvenLoremIpsum();
-}
+    private static LoremIpsumGenerator loremIpsumGenerator;
+
+    @BeforeClass
+    public static void start() {
+        loremIpsumGenerator = new SvenLoremIpsum();
+    }
 
     @Test
     public void testGenerator() throws Exception {
         assertFalse(loremIpsumGenerator.getWords(2).isEmpty());
         assertFalse(loremIpsumGenerator.getParagraphs(2).isEmpty());
-        assertEquals(2,loremIpsumGenerator.getWords(2).split(("\\s+")).length);
-        assertEquals(2,loremIpsumGenerator.getParagraphs(2).split(("\\s+")).length);
+        assertEquals(2, loremIpsumGenerator.getWords(2).split(("\\s+")).length);
+        assertEquals(2, loremIpsumGenerator.getParagraphs(2).split(("\\s+")).length);
+        loremIpsumGenerator = new PawelLoremIpsum();
+        assertFalse(loremIpsumGenerator.getWords(2).isEmpty());
+        assertFalse(loremIpsumGenerator.getParagraphs(2).isEmpty());
+        assertEquals(2, loremIpsumGenerator.getWords(2).split(("\\s+")).length);
+        assertEquals(100, loremIpsumGenerator.getParagraphs(2).split(("\\s+")).length);
     }
 }
 
