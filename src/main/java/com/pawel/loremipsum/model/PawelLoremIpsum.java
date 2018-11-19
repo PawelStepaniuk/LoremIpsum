@@ -29,12 +29,13 @@ public class PawelLoremIpsum implements LoremIpsumGenerator {
     public String getParagraphs(int amount) {
         StringBuilder lorem = new StringBuilder();
 
-        for (int i = 0; i < amount; ++i) {
+        for(int i = 0; i < amount; ++i) {
             lorem.append("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.");
             if (i < amount - 1) {
                 lorem.append("\n\n");
             }
         }
+
         return lorem.toString();
     }
 }
