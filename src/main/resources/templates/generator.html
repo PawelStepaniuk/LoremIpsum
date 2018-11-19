@@ -14,13 +14,13 @@
 
 <div class="mainContainer">
     <textarea rows='0' placeholder='Auto-Expanding Textarea' th:if="${lorem}" th:text="${lorem}"></textarea>
-    <form action="/text" method="get">
+    <form action="/text" method="post">
 
         <p>Podaj ilość  <input type="number" name="amount" required style="width: 50px">
             <button type="submit" class="btn btn-default">Generate</button></p>
         <form>
-            <input type="radio" name="word" value="true" required> Słowa
-            <input type="radio" name="word" value="false" required> Akapity
+            <input type="radio" name="word" value="words" required> Słowa
+            <input type="radio" name="word" value="paragraphs" required> Akapity
         </form>
     </form>
 </div>
