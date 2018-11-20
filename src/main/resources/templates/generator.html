@@ -13,7 +13,9 @@
 <h1>Lorem ipsum</h1>
 
 <div class="mainContainer">
-    <textarea rows='0' placeholder='Auto-Expanding Textarea' th:if="${lorem}" th:text="${lorem}"></textarea>
+
+
+    <textarea rows='0' th:if="${lorem}" th:text="${lorem}"></textarea>
     <form action="/text" method="post">
 
         <p>Podaj ilość  <input type="number" name="amount" required style="width: 50px">
