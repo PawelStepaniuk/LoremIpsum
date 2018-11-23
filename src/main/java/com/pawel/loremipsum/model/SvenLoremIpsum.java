@@ -1,8 +1,4 @@
 package com.pawel.loremipsum.model;//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by Fernflower decompiler)
-//
-
 import com.pawel.loremipsum.dao.LoremIpsumGenerator;
 import org.springframework.stereotype.Component;
 

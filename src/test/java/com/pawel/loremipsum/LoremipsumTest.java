@@ -3,13 +3,11 @@ package com.pawel.loremipsum;
 import com.pawel.loremipsum.dao.LoremIpsumGenerator;
 import com.pawel.loremipsum.model.PawelLoremIpsum;
 import com.pawel.loremipsum.model.SvenLoremIpsum;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
 
 public class LoremipsumTest {
     private static LoremIpsumGenerator loremIpsumGenerator;

@@ -1,8 +1,6 @@
 package com.pawel.loremipsum.controller;
 
-import com.pawel.loremipsum.dao.LoremIpsumGenerator;
 import com.pawel.loremipsum.model.PawelLoremIpsum;
-import com.pawel.loremipsum.model.SvenLoremIpsum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
